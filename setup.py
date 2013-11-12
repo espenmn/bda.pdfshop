@@ -28,6 +28,7 @@ setup(name='bda.pdfshop',
       install_requires=[
           'setuptools',
           'pp.client-plone',
+          'z3c.jbot',
           # -*- Extra requirements: -*-
       ],
       tests_require=['zope.testing'],
