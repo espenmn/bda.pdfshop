@@ -21,8 +21,7 @@ environment-vars =
 Problems?
 ---------
 - on OS X I had to manually download phantomjs
-- On Ubuntu I had a problem with gevent which I solved like this: http://stackoverflow.com/questions/6431096/gevent-does-not-install-properly-on-ubuntu
-    
+- On Ubuntu I had a problem with gevent due to a bug in Ubuntu (reinstalling some libs did the trick... I think it was libevent)
 Licence
 -------
 Published under the GNU Public Licence Version 2 (GPL 2)
