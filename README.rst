@@ -6,7 +6,7 @@ to be used with pp.plone-client.
 
 How to
 -------
-- install Installation of the Produce & Publish Server ( http://www.andreas-jung.com/contents/pdf-generation-with-plone-and-phantomjs )
+- install Produce & Publish Server ( http://www.andreas-jung.com/contents/pdf-generation-with-plone-and-phantomjs )
 - add the following to your buildout.cfg
 
 environment-vars =
@@ -16,6 +16,12 @@ environment-vars =
     PP_RESOURCE bda-default
     
 - generate your pdf by going to http://yoursite/product/asPDF    
+
+
+Problems?
+---------
+- on OS X I had to manually download phantomjs
+- On Ubuntu I had a problem with gevent which I solved like this: http://stackoverflow.com/questions/6431096/gevent-does-not-install-properly-on-ubuntu
     
 Licence
 -------
