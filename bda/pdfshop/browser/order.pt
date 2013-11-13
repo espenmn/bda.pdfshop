@@ -2,15 +2,15 @@
             order view/order">
             
   <div class="sender">
-  	<h2>Bokstav og Bilde as</h2>
-  	<p>Skabosgt. 15, 3040 Drammen</p>
-  	<p>Organisasjonsnr.: NO 989 250 590 MVA</p>
-  	<p>Bankgiro: 1503 02 42863</p>
+  	<h2>Your company</h2>
+  	<p>Your adr.</p>
+  	<p>Your organizatio no</p>
+  	<p>Bank account</p>
   </div>
 
 
   <div class="invoice_personal_row">
-    <h2 tal:replace="order/personal_data.company">company</h2>
+    <h2 tal:replace="order/personal_data.company">Company</h2>
     <p>Att:
         <span tal:replace="order/personal_data.firstname">first name</span>
         <span tal:replace="order/personal_data.lastname">last name</span>
@@ -23,27 +23,26 @@
   </div>
   
   <div class="invoice_details_row">
-  	<p><strong>Faktura </strong> ______</p>
+  	<p><strong>Inoice no: </strong> ______</p>
   	<p>
       <strong i18n:translate="order_number">Ordernumber: </strong>
       <span tal:replace="order/ordernumber">12345</span>
   	</p>
-  	<p><strong>Fakturadato: </strong>_______</p>
-  	<p><strong>Vår ref. </strong>Arne KJ</p>
+  	<p><strong>Invoice date: </strong>_______</p>
+  	<p><strong>Our ref: </strong>Our Man</p>
   </div>
-
 
   <div class="order_details_row">
   <hr/>
     <div class="order_summary">
-      <h3 i18n:translate="order_summary">Sammendrag:</h3>
-      <strong i18n:translate="order_net">Pris:</strong>
+      <h3 i18n:translate="order_summary">Summary:</h3>
+      <strong i18n:translate="order_net">Price:</strong>
       <span tal:replace="view/net">0.00</span>
       <br />
-      <strong i18n:translate="order_vat">Moms:</strong>
+      <strong i18n:translate="order_vat">VAT:</strong>
       <span tal:replace="view/vat">0.00</span>
       <br />
-      <strong i18n:translate="order_shipping_costs">Forsendelse:</strong>
+      <strong i18n:translate="order_shipping_costs">Shipping:</strong>
       <span tal:replace="view/shipping">0.00</span>
       <br />
       <strong i18n:translate="order_total">Sum:</strong>
@@ -51,22 +50,21 @@
     </div>
   </div>
 
-
   <div class="order_bookings">
-    <h3 i18n:translate="order_bookings">Ordreoversikt</h3>
+    <h3 i18n:translate="order_bookings">Order details</h3>
     <table>
       <tr>
-        <th i18n:translate="booking_title">Tittel</th>
-        <th i18n:translate="booking_count">Antall</th>
-        <th i18n:translate="booking_net">Pris</th>
-        <th i18n:translate="booking_vat">Moms</th>
+        <th i18n:translate="booking_title">Title</th>
+        <th i18n:translate="booking_count">Count</th>
+        <th i18n:translate="booking_net">Price</th>
+        <th i18n:translate="booking_vat">Vat</th>
       </tr>
       <tal:tr repeat="row view/listing">
         <tr tal:define="even repeat/row/even"
             tal:attributes="class python:even and 'even' or 'odd'">
-          <td tal:content="row/title">Tittel</td>
-          <td tal:content="row/count">Antall</td>
-          <td tal:content="row/net">Pris</td>
+          <td tal:content="row/title">Title</td>
+          <td tal:content="row/count">Count</td>
+          <td tal:content="row/net">Price</td>
           <td>
             <span tal:replace="row/vat">25.0</span>%
           </td>
@@ -76,9 +74,9 @@
   </div>
   
    <div class="sender_bottom">
-  	<p><b>Bokstav og Bilde as</b><br/>
-  	Skabosgt. 15, 3040 Drammen<br/>
-  	Organisasjonsnr.: NO 989 250 590 MVA<br/></p>
+  	<p><b>Your company</b><br/>
+  	Your adr.<br/>
+  	Org no: 999 999 99<br/></p>
   </div>
 
 
@@ -87,11 +85,11 @@
     <p tal:replace="order/billing_address.street">street</p>
     <p> 
        <span tal:replace="order/billing_address.zip">zip</span>
-      <span tal:replace="order/billing_address.city">city</span>
+       <span tal:replace="order/billing_address.city">city</span>
     </p>
   </div>
   
    <div class="totalsum" tal:content="view/total">0.00</div>
-   <div class="kontonr">1503 02 42863</div>
+   <div class="kontonr">9999.99.9999</div>
    
- </div>
+</div>

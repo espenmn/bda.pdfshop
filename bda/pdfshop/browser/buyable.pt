@@ -1,20 +1,16 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="bdastyle.css">
 </head>
     
 <div class="type-shop-document content-body">
-<div class="bdatitle" tal:content="context/Title">Tittel</div>
+	<div class="bdatitle" tal:content="context/Title">Tittel</div>
+    <h4 class="bdadescription" tal:content="context/Description"/>
     <p class="imagepart">
         <img src="#" class="internal" internal-image="true" 
             tal:attributes="src string:${context/absolute_url}/@@images/image" />
     </p>
-    <div class="bmhbody">
-        <h4 class="description" tal:content="context/Description"/>
-       
+    <div class="bdabody">
         <div tal:replace="structure context/details/output"
              tal:condition="exists:context/details" />
     </div>
-   
-
 </div>

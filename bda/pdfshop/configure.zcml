@@ -17,11 +17,6 @@
       name="bda-default"
       directory="bda_resources_default"
     />
-    
-    <include package="z3c.jbot" file="meta.zcml" />
-    
-    <browser:jbot
-    directory="resources_default"
-     />
-    
+
+
 </configure>

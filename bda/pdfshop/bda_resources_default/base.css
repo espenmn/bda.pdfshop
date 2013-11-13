@@ -1,4 +1,4 @@
-mport url("fonts.css");
+import url("fonts.css");
 
 body {
     font-size: 11px;
@@ -19,8 +19,8 @@ h3 {
 
 h4 {
     font-size: 1.2em;
+    text-align: center;
 }
-
 
 .description {
     font-size: 1.2em;
@@ -35,6 +35,7 @@ img {
     height: 50%;
 }
 
+/* bda specific from here */
 .bdatitle,
 .red {
     background: none repeat scroll 0 0 #FF0000;
@@ -55,8 +56,8 @@ p {
    font-size: 11px;
 }
 
-.bmhinfo p,
-.bmhbody p { 
+.bdainfo p,
+.bdabody p { 
    padding: 0;
    margin: 0;
    line-height: 15px;
@@ -69,31 +70,31 @@ li strong, ul strong, b, strong {
 
 .teknisk { 
     font-family: Arial;
-        margin-left: 14px;
-        height: 20px;
-        padding: 4px 7px;
-        background: #AAA;
-        font-size: 9px;
-        line-height: 10px;
-        font-weight: bold;
-        color: white;
-        line-height: 15px;
+    margin-left: 14px;
+    height: 20px;
+    padding: 4px 7px;
+    background: #AAA;
+    font-size: 9px;
+    line-height: 10px;
+    font-weight: bold;
+    color: white;
+    line-height: 15px;
 }
 
-.bmhinfo { 
-        font-family: Arial;
-        border: 1px solid #CCC;
-        padding: 20px;
-        line-height: 130%;
-        clear: both;
-        margin-top: 3px; 
-        font-size: 90%;
-        
+.bdainfo { 
+    font-family: Arial;
+    border: 1px solid #CCC;
+    padding: 20px;
+    line-height: 130%;
+    clear: both;
+    margin-top: 3px; 
+    font-size: 90%;      
 }
-.bmhbody { 
-        background: #EEE;
-        padding: 12px 30px;
-        margin-bottom: 4px;
+
+.bdabody { 
+    background: #EEE;
+    padding: 12px 30px;
+    margin-bottom: 4px;
 }
 
 .price {
@@ -114,7 +115,7 @@ li strong, ul strong, b, strong {
     width: 100px;
 }
 
-.bmh_url {
+.bda_url {
     position: absolute;
     top: 957px;
     right: 10px;
@@ -123,13 +124,16 @@ li strong, ul strong, b, strong {
     font-weight: bold;
     font-family: arial;
 }
+
+/* Max width is important here */
+/* or absolute position will not work correctly */
 .imagepart {
     text-align: center;
     max-width: 100%;
     display: block;
     overflow: hidden;
   }
-    
+
 .internal { 
     width: auto; 
     margin: 0;
@@ -147,7 +151,7 @@ li strong, ul strong, b, strong {
     page-break-before: always;
 }
 
-.bmhbottom {
+.bdabottom {
     font-family: 'Ubuntu';
     font-size: 8pt;
     padding: 6px 20px 5px 14px;
@@ -159,13 +163,13 @@ li strong, ul strong, b, strong {
     box-shadow: 0px 1px 12px rgba(0,0,0,0.6);  
 }
 
-.bmhbottom p {
+.bdabottom p {
     font-family: 'Ubuntu';
     font-size: 8pt;
     line-height: 12pt; 
 }
 
-.bmhimage {
+.bdaimage {
     margin-top: 10px;
     width: 100%;
     height: 450px;
@@ -176,16 +180,12 @@ li strong, ul strong, b, strong {
 
 
 /* styles for invoice */
-
-
-
 .ivoice p {
 	margin: 0;
 	padding: 0;
 	font-family: Baskerville, Georgia, Garamond, Times, serif;
     font-size: 9pt !important;
 }
-
 
 div.sender {
 	position:  absolute;
@@ -248,9 +248,9 @@ div.order_summary {
 	top: 292px;
 	left: 60px;
 	font-size: 80%;
-        min-width: 500px;
-               border-top: 1px solid #DDD;
-padding-top: 10px;
+    min-width: 500px;
+    border-top: 1px solid #DDD;
+	padding-top: 10px;
 }
 
 div.order_bookings {
@@ -259,8 +259,6 @@ div.order_bookings {
 	left: 60px;
 	font-size: 80%;
 }
-
-
 
 .order_details {
 	clear: both;
