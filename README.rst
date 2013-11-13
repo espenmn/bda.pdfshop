@@ -17,11 +17,19 @@ environment-vars =
     
 - generate your pdf by going to http://yoursite/product/asPDF    
 
+The templates
+--------------
+- it is possible to load css in the templates by using full URL, probably:
+
+<head>
+    <link rel="stylesheet" href="http://mysite/my.css" />
+</head>
 
 Problems?
 ---------
 - on OS X I had to manually download phantomjs
 - On Ubuntu I had a problem with gevent due to a bug in Ubuntu (reinstalling some libs did the trick... I think it was libevent)
+
 Licence
 -------
 Published under the GNU Public Licence Version 2 (GPL 2)

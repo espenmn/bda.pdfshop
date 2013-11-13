@@ -2,10 +2,10 @@
             order view/order">
             
   <div class="sender">
-  	<h2>Your company</h2>
-  	<p>Your adr.</p>
-  	<p>Your organizatio no</p>
-  	<p>Bank account</p>
+          <h2>Your company</h2>
+          <p>Your adr.</p>
+          <p>Your organizatio no</p>
+          <p>Bank account</p>
   </div>
 
 
@@ -23,13 +23,13 @@
   </div>
   
   <div class="invoice_details_row">
-  	<p><strong>Inoice no: </strong> ______</p>
-  	<p>
+          <p><strong>Inoice no: </strong> ______</p>
+          <p>
       <strong i18n:translate="order_number">Ordernumber: </strong>
       <span tal:replace="order/ordernumber">12345</span>
-  	</p>
-  	<p><strong>Invoice date: </strong>_______</p>
-  	<p><strong>Our ref: </strong>Our Man</p>
+          </p>
+          <p><strong>Invoice date: </strong>_______</p>
+          <p><strong>Our ref: </strong>Our Man</p>
   </div>
 
   <div class="order_details_row">
@@ -74,9 +74,9 @@
   </div>
   
    <div class="sender_bottom">
-  	<p><b>Your company</b><br/>
-  	Your adr.<br/>
-  	Org no: 999 999 99<br/></p>
+          <p><b>Your company</b><br/>
+          Your adr.<br/>
+          Org no: 999 999 99<br/></p>
   </div>
 
 

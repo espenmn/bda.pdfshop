@@ -1,0 +1,13 @@
+<html i18n:domain="plone"> 
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="http://localhost:8080/pdhop/espen.css" />
+    </head>
+    <body>
+        <div id="main-content">
+            
+ <p>this is just a test, but it probaly means we can use replace structure and make what we want</p>
+   
+</div>
+</body>
+</html>
