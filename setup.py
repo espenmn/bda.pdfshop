@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='bda.pdfshop',
       version=version,
       description="bda templates for produce and publish",
-      long_description=open(os.path.join("docs", "README.rst")).read() + "\n" +
+      long_description=open("README.rst")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
